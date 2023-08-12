@@ -1,0 +1,67 @@
+/* Form Section Styles */
+
+#user-form {
+    height: 100%;
+}
+
+#user-form .mainbox {
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* Form Control Styles */
+
+.form-control {
+    margin: 5px 0;
+    /* Adding margin to form controls */
+}
+
+.form-label {
+    margin: 0 !important;
+    /* Removing margin from form labels */
+}
+
+
+/* Form Box Styles */
+
+#user-form .mainbox .form-box {
+    z-index: 2;
+    background: white;
+    padding: 25px 35px 35px;
+    /* Adding padding to the form box */
+    border-radius: 20px;
+    box-shadow: 0 22px 62px 84px rgba(0, 0, 0, 0.05);
+    /* Adding box shadow */
+}
+
+
+/* Form Check Styles */
+
+.form-check {
+    overflow: visible;
+    /* Adjusting overflow for form check elements */
+}
+
+
+/* Form Control Focus Styles */
+
+.form-control:focus {
+    border: 1px solid var(--primary-color) !important;
+    box-shadow: none !important;
+    /* Removing box shadow on focus */
+}
+
+
+/* Checked Form Check Input Styles */
+
+.form-check-input:checked {
+    background-color: var(--primary-color) !important;
+    /* Changing background color when checked */
+    color: white !important;
+    /* Changing text color when checked */
+    box-shadow: none !important;
+    /* Removing box shadow */
+    border: none !important;
+    /* Removing border */
+}

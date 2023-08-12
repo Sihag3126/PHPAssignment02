@@ -1,0 +1,212 @@
+/* Global Variables */
+
+:root {
+    --primary-color: #0C2D48;
+    /* Primary color variable */
+    --hover-color: #FF5C4D;
+    /* Hover color variable */
+}
+
+
+/* Reset Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Hide Background Box (Check usage) */
+
+#bg-box {
+    display: none;
+}
+
+
+/* Navigation Styles */
+
+.navigation,
+.navbar,
+#navbar,
+#buttons,
+.dropdown {
+    overflow: visible !important;
+    /* Adjusting overflow behavior */
+}
+
+.navigation {
+    background-color: var(--primary-color);
+    /* Setting navigation background color */
+    padding: 0 100px;
+    /* Adding padding to navigation */
+}
+
+
+/* Navbar Styles */
+
+#navbar {
+    width: 100%;
+}
+
+#navbar .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    height: 100%;
+    width: 100%;
+}
+
+#navbar .nav .nav-item a {
+    font-size: 19px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+
+/* Button Styles */
+
+.main-btn {
+    background: white !important;
+    /* Main button background color */
+}
+
+.main-btn:hover {
+    background: var(--hover-color) !important;
+    /* Button hover color */
+}
+
+.main-btn:hover a {
+    color: white !important;
+    /* Changing link color on hover */
+}
+
+.main-btn-submit {
+    background: var(--primary-color) !important;
+    /* Submit button background color */
+    color: white !important;
+    /* Submit button text color */
+}
+
+.main-btn-submit:hover {
+    background: var(--hover-color) !important;
+    /* Submit button hover color */
+}
+
+
+/* Navbar Navigation Styles */
+
+#navbar .nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 !important;
+    /* Resetting margin */
+}
+
+
+/* Buttons Styles */
+
+#buttons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+/* Navigation Button Link Styles */
+
+#buttons button a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+
+/* Focus Styles */
+
+.btn:focus {
+    box-shadow: none !important;
+    /* Removing focus box shadow */
+}
+
+
+/* Home Section Styles */
+
+#home {
+    height: 100%;
+}
+
+#home .home-box {
+    height: 89.5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .home-box .box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Heading Styles */
+
+.heading {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0;
+    text-transform: capitalize;
+}
+
+
+/* Main Content Styles */
+
+.main {
+    padding: 0 !important;
+    /* Resetting padding */
+}
+
+
+/* Footer Styles */
+
+footer.container-fluid {
+    background: var(--primary-color);
+    height: 37px;
+}
+
+footer.container-fluid .footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    font-size: 20px;
+    font-family: var(--primary-font);
+    text-transform: capitalize;
+}
+
+
+/* Navigation Links Styles */
+
+.navigate {
+    display: flex;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.navigate a {
+    color: var(--primary-color);
+}
+
+
+/* Error Message Styles */
+
+.error {
+    margin-top: 12px;
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    font-weight: 500;
+}

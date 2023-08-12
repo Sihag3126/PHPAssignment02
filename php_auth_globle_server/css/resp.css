@@ -1,0 +1,84 @@
+:root {
+    --primary-color: #0C2D48;
+    --hover-color: #FF5C4D;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 750px) {
+    #bg-box {
+        position: static;
+        display: block !important;
+    }
+    .menu-toggle {
+        display: flex;
+        justify-content: end;
+    }
+    #mobile {
+        background: var(--primary-color);
+        height: 55px;
+    }
+    .menu-toggle .icon {
+        filter: invert();
+        position: relative;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+    }
+    .menu-toggle .icon img {
+        width: 75%;
+    }
+    .menu-toggle.active .mobile-nav {
+        opacity: 1;
+        display: block;
+    }
+    .mobile-nav .menu-toggle .icon {
+        filter: invert(100%);
+        /* Fixed filter: invert() function */
+        position: relative;
+        top: 10px;
+        right: 10px;
+        width: 40px;
+    }
+    .mobile-nav {
+        background: var(--primary-color);
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        opacity: 0;
+        display: none;
+        height: 100%;
+    }
+    .mobile-nav .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+    }
+    .mobile-nav .navbar li {
+        list-style: none;
+        margin: 10px 0;
+        text-align: center;
+        /* Removed the duplicate margin property */
+        width: 100%;
+    }
+    .mobile-nav .navbar li a {
+        text-decoration: none;
+        font-family: var(--primary-font);
+        color: white;
+        font-size: 25px;
+    }
+    .navigation {
+        display: none;
+    }
+    .form-box {
+        margin: 0 15px;
+    }
+    li form button {
+        text-decoration: none;
+        color: white !important;
+        font-size: 25px;
+    }
+    .navigate {
+        font-size: 12px;
+    }
+}
